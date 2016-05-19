@@ -1,0 +1,32 @@
+<ion-view hide-nav-bar="true" class="home" cache-view="false" can-swipe-back="false">
+    <ion-header-bar>
+        <span class="title">
+		Configuración
+	</span>
+    </ion-header-bar>
+    <ion-content>
+        <!-- -->
+        <ion-list>
+            <ion-item ng-repeat="item in model.equip" class="item-avatar item-button-right">
+                <img ng-src="bundles/app/css/images/equip/{{item.photo}}">
+                <h2>{{item.name}}</h2>
+                <p>{{item.description}}</p>
+                <!-- ASSIGN -->
+                <button class="button button-positive" ng-click="assign(item)">
+                    <i class="icon ion-ios-paperplane-outline"></i>
+                </button>
+
+                <span ng-if="item.beacons.length > 0" class="badge badge-assertive">
+                    {{item.beacons.length}}
+                </span>
+            </ion-item>
+        </ion-list>
+        <!-- -->
+    </ion-content>
+    <ion-footer-bar class="action-button">
+        <button class="button button-block" ng-click="continue(model.equip)">
+            Continuar
+            <i class="icon ion-ios-arrow-right"></i>
+        </button>
+    </ion-footer-bar>
+</ion-view>

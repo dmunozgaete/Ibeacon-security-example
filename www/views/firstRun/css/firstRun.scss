@@ -1,0 +1,93 @@
+@import "../../../bundles/app/css/_variables";
+@import "../../../bundles/app/css/_flexbox";
+[md-theme='dark'] {
+    @mixin layout-fill {
+        display: block;
+        min-height: 100%;
+        width: 100%;
+    }
+    /*------------------------- 
+    VIEW:   First Run View's
+    ROUTE:  /app/firstRun/configure
+    -------------------------*/
+    .firstRun {
+        &.configure {
+            color: #FFF;
+            
+            background-gps {
+                @include layout-fill();
+                background-image: url(images/background-gps.png);
+                background-color: #bd741a;
+
+            }
+            push-notifications {
+                @include layout-fill();
+                background-image: url(images/push-notifications.png);
+                background-color: #6b8e35;
+                .actions {
+                    text-align: left;
+                    > button {
+                        padding: 6px !important;
+                        margin-right: 8px;
+                    }
+                    > a {
+                        color: rgb(255, 255, 255);
+                        font-size: 1.1em;
+                        padding-left: 4px;
+                        padding: 8px;
+                        padding-right: 12px;
+                        padding-left: 8px;
+                    }
+                }
+            }
+            sport-selector {
+                @include layout-fill();
+                background-image: url(images/sport-selector.png);
+                background-color: #3c3688;
+            }
+            /*
+              ION SLIDES CUSTOMIZATION
+            */
+            ion-slides {
+                .swiper-slide {
+                    > * {
+                        background-size: 100% auto;
+                        background-position: center 35%;
+                        background-repeat: no-repeat;
+                    }
+                    content {
+                        display: block;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        padding: 1em;
+                        height: 18em;
+                        > .title {
+                            font-size: 1.8em;
+                            padding-bottom: 1em;
+                        }
+                        > .description {
+                            text-align: justify
+                        }
+                        > .actions {
+                            text-align: center;
+                            padding-top: 2em;
+                            > button {
+                                padding: 6px 25px;
+                                border-radius: 4px;
+                                font-size: 1.2em;
+                                border: 1px solid rgb(226, 226, 226);
+                                background: none;
+                                color: rgb(255, 255, 255);
+                            }
+                        }
+                    }
+                }
+                .swiper-pagination-bullet {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}

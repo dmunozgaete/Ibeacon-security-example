@@ -1,0 +1,4 @@
+{
+	"API_EndPoint": "http://val-demos.cloudapp.net:81/MotoApp/API/v1",
+    "debugging": true
+}

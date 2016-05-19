@@ -1,0 +1,26 @@
+@import "../../../css/_variables";
+@import "../../../css/_flexbox";
+empty-data {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    empty-message {
+        display: block;
+        font-size: 1.2em;
+        opacity: 0.5;
+    }
+    empty-legend {
+        display: block;
+        opacity: 0.4;
+        margin-top: 0.5em;
+        font-size: 0.9em;
+        line-height: 1em;
+    }
+    > empty-content {
+        display: block;
+    }
+}

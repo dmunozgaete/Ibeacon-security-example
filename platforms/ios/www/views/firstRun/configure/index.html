@@ -1,0 +1,15 @@
+<ion-view class="firstRun configure">
+    <!-- SLIDES -->
+    <ion-slides slider="slider">
+        <!-- Background GPS Permitions -->
+        <ion-slide-page class="swiper-no-swiping">
+            <background-gps on-complete="next('BACKGROUND_GPS')">
+            </background-gps>
+        </ion-slide-page>
+        <!-- Push Notifications Permitions -->
+        <ion-slide-page>
+            <push-notifications on-complete="next('PUSH_NOTIFICATIONS')">
+            </push-notifications>
+        </ion-slide-page>
+    </ion-slides>
+</ion-view>

@@ -1,0 +1,31 @@
+<ion-view hide-nav-bar="true" class="state" cache-view="false" can-swipe-back="false">
+    <ion-header-bar>
+        <span class="title">
+		Estado
+	</span>
+    </ion-header-bar>
+    <ion-content>
+        <!-- -->
+        <ion-list>
+            <ion-item ng-repeat="item in model.equip" class="item-avatar item-button-right">
+                <img ng-src="bundles/app/css/images/equip/{{item.photo}}">
+                <h2>{{item.name}}</h2>
+                <p>{{item.equipState}}</p>
+                <!-- ASSIGN -->
+                <button ng-if="item.equipState== 'NEAR'" class="button button-balanced">
+                    <i class="icon ion-checkmark-circled"></i>
+                </button>
+                <button ng-if="item.equipState== 'FAR_AWAY'" class="button button-assertive">
+                    <i class="icon ion-close-circled"></i>
+                </button>
+            </ion-item>
+        </ion-list>
+        <!-- -->
+    </ion-content>
+    <ion-footer-bar class="action-button">
+        <button class="button button-block" ng-click="continue(model.equip)">
+            Continuar
+            <i class="icon ion-ios-arrow-right"></i>
+        </button>
+    </ion-footer-bar>
+</ion-view>

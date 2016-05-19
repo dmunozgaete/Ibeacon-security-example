@@ -1,0 +1,15 @@
+<center ng-if="!loadComplete && !loadError">
+    <ion-spinner icon="{{loadingSpinner}}"></ion-spinner>
+    <div class="message" ng-if="loadingTitle">
+        {{loadingTitle}}
+    </div>
+    <div class="legend" ng-if="loadingLegend">
+        {{loadingLegend}}
+    </div>
+</center>
+<figure class="{{cssgramFilter}}" ng-if="loadComplete" >
+    <img ng-src="{{ngSrc}}" />
+</figure>
+<div ng-if="loadError" class="error">
+    <i class="icon ion-outlet"></i>
+</div>

@@ -1,0 +1,24 @@
+/* 
+    SASS Theme Variables 
+*/
+/* 
+    SASS Mixins
+*/
+[md-theme='dark'] {
+  /*------------------------- 
+  VIEW:   Home Page
+  ROUTE:  /app/home
+  -------------------------*/ }
+  [md-theme='dark'] ion-view.home ion-list ion-item {
+    background: transparent;
+    border-color: #4C4C4C; }
+    [md-theme='dark'] ion-view.home ion-list ion-item h2 {
+      color: #fff; }
+    [md-theme='dark'] ion-view.home ion-list ion-item button {
+      margin-top: 13px; }
+    [md-theme='dark'] ion-view.home ion-list ion-item .badge {
+      right: auto !important;
+      top: 45px !important;
+      left: 8px !important; }
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,19 @@
+{
+  "name": "Estimote",
+  "private": "true",
+  "devDependencies": {},
+  "dependencies": {
+    "lodash": "~3.10.1",
+    "ionic": "driftyco/ionic-bower#v1.2.1",
+    "ngCordova": "~0.1.20-alpha",
+    "angular-ui-router": "~0.2.13",
+    "angular-gale": "dmunozgaete/angular-gale#master",
+    "robotodraft": "~1.1.0",
+    "angular-ios9-uiwebview-patch": "~1.1.1"
+  },
+  "resolutions": {
+    "angular": "1.4.3",
+    "angular-animate": "1.4.3",
+    "angular-sanitize": "1.4.3"
+  }
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;;;AAaA,aAAc;;;;EAKV,kJAAmJ;IALvJ,aAAc;;;;MAUF,kCAAS;;;;QAMG,kEAAiB;UACb,WAAW,EAAE,iBAAiB",
+"sources": ["platform-overrides.scss"],
+"names": [],
+"file": "platform-overrides.css"
+}

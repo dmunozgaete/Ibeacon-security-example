@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <!-- WHITE LIST PLUGIN -->
+        <!--<meta http-equiv="Content-Security-Policy" content="image-src *; default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">-->
+    
+
+        <title></title>
+
+        <!-- ROBOTO DRAFT FONT -->
+        <link href='lib/robotodraft/robotodraft.css' rel='stylesheet' type='text/css'>
+
+        <!-- bower:css -->
+        <link rel="stylesheet" href="lib/ionic/css/ionic.css">
+        <!-- endinject -->
+
+        <!-- inject:css -->
+        <link rel="stylesheet" href="bundles/cssgram/cssgram.min.css">
+        <link rel="stylesheet" href="bundles/app/css/_flexbox.css">
+        <link rel="stylesheet" href="bundles/app/css/_variables.css">
+        <link rel="stylesheet" href="bundles/app/css/default.css">
+        <link rel="stylesheet" href="bundles/app/css/platform-overrides.css">
+        <link rel="stylesheet" href="bundles/app/components/empty-data/css/empty-data.css">
+        <link rel="stylesheet" href="bundles/app/components/flex-loading/css/flex-loading.css">
+        <link rel="stylesheet" href="bundles/app/components/preload-image/css/preload-image.css">
+        <link rel="stylesheet" href="bundles/app/components/custom/beacon-finder/css/beacon-finder.css">
+        <link rel="stylesheet" href="views/boot/css/boot.css">
+        <link rel="stylesheet" href="views/firstRun/css/firstRun.css">
+        <link rel="stylesheet" href="views/home/css/home.css">
+        <link rel="stylesheet" href="views/security/css/security.css">
+        <link rel="stylesheet" href="views/state/css/state.css">
+        <!-- endinject -->
+        
+        <!-- cordova script (this will be a 404 during development) -->
+        <script src="cordova.js"></script>
+    
+
+        <!-- bower:js -->
+        <script src="lib/lodash/lodash.js"></script>
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular-animate/angular-animate.js"></script>
+        <script src="lib/angular-sanitize/angular-sanitize.js"></script>
+        <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+        <script src="lib/angular-gale/dist/angular-gale.js"></script>
+        <script src="lib/angular-ios9-uiwebview-patch/angular-ios9-uiwebview-patch.js"></script>
+        <script src="lib/ionic/js/ionic.js"></script>
+        <script src="lib/ionic/js/ionic-angular.js"></script>
+        <!-- endinject -->
+        
+        <!-- inject:js -->
+        <script src="bundles/angular-locale/angular-locale_es-cl.js"></script>
+        <script src="bundles/app/app.js"></script>
+        <script src="bundles/mocks/mocks.js"></script>
+        <script src="bundles/mocks/js/angular-mocks.js"></script>
+        <script src="bundles/app/js/filters/restricted.js"></script>
+        <script src="bundles/app/js/services/ApplicationCleanse.js"></script>
+        <script src="bundles/app/js/services/Background.js"></script>
+        <script src="bundles/app/js/services/Camera.js"></script>
+        <script src="bundles/app/js/services/File.js"></script>
+        <script src="bundles/app/js/services/Gps.js"></script>
+        <script src="bundles/app/js/services/Synchronizer.js"></script>
+        <script src="bundles/mocks/js/mocks/configuration.js"></script>
+        <script src="bundles/mocks/js/mocks/dashboard.js"></script>
+        <script src="bundles/mocks/js/mocks/notifications.js"></script>
+        <script src="bundles/mocks/js/mocks/profile.js"></script>
+        <script src="bundles/mocks/js/mocks/routes.js"></script>
+        <script src="bundles/mocks/js/mocks/security.js"></script>
+        <script src="bundles/app/components/empty-data/directives/empty-data.js"></script>
+        <script src="bundles/app/components/custom/beacon-finder/beacon-finder.js"></script>
+        <script src="bundles/app/components/flex-loading/directives/flex-loading.js"></script>
+        <script src="bundles/app/components/preload-image/directives/preload-image.js"></script>
+        <script src="bundles/app/components/custom/beacon-finder/filters/beaconDistance.js"></script>
+        <script src="bundles/app/components/custom/beacon-finder/services/BeaconFinderProvider.js"></script>
+        <script src="views/boot/index.js"></script>
+        <script src="views/error/404.js"></script>
+        <script src="views/home/index.js"></script>
+        <script src="views/layouts/blank.js"></script>
+        <script src="views/layouts/exception.js"></script>
+        <script src="views/layouts/public.js"></script>
+        <script src="views/state/index.js"></script>
+        <script src="views/firstRun/configure/index.js"></script>
+        <script src="views/security/identity/login.js"></script>
+        <script src="views/firstRun/configure/directives/backgroundGps.js"></script>
+        <script src="views/firstRun/configure/directives/pushNotifications.js"></script>
+        <!-- endinject -->
+
+        <script src="config/Config.js"></script>
+        <script src="Application.js"></script>
+    </head>
+
+    <body class="platform-android platform-cordova platform-webview">
+
+        <!-- ANGULAR VIEW -->
+        <div ui-view ng-cloak md-theme="dark">
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,40 @@
+/*--------------------------------------------------
+Whether the application is running within a webview on 
+the device within a native application
+--------------------------------------------------*/
+
+.platform-webview {   
+}
+
+
+/*--------------------------------------------------
+  PORTRAIT IOS VIEWPORT' (DEFAULT DIMENSIONS ARE FOR iPhone 5 and 5S)
+--------------------------------------------------*/
+
+.platform-ios {
+    
+    /* iPhone 4 and 4S */
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+    /* iPhone 6 */
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+        /*------------------------------------------------------
+        SPECIFIC VIEW'S
+        ------------------------------------------------------*/
+        ion-view.pane {
+            &.routes {
+                /*------------------------- 
+                VIEW:   Stop Page
+                -------------------------*/
+                &.pause {
+                    .buttons {
+                        .chart-container {
+                            margin-left: 1.84em !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* iPhone 6+ (plus) */
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+}

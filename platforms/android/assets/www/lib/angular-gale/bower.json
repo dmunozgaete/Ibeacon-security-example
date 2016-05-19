@@ -1,0 +1,37 @@
+{
+  "name": "angular-gale",
+  "version": "1.0.0-rc.8",
+  "homepage": "https://github.com/dmunozgaete/angular-gale",
+  "authors": [
+    "David Gaete <dmunozgaete@gmail.com> (https://github.com/dmunozgaete)"
+  ],
+  "description": "Angular Implementation for the Javascript Client GALE",
+  "main": [
+    "dist/angular-gale.js"
+  ],
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "Gale",
+    "AngularJS",
+    "Valentys",
+    "Angular",
+    "DmunozGaete"
+  ],
+  "license": "Apache 2.0 License",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "grunt",
+    "src",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "angular-ui-router": "0.2.13",
+    "lodash": "~3.10.1"
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../../../../../bundles/app/css/_variables";
+div.modal-backdrop-bg {
+    background-color: #000;
+    opacity: 0.7;
+}
+
+ion-modal-view.beacon-finder {
+    min-height: 75%;
+    width: 84%;
+    margin-left: 8%;
+    margin-top: 20%;
+    border-radius: 4px;
+    overflow: hidden;
+    .title {
+        font-size: 1.2em;
+        padding-top: 12px;
+        text-align: center;
+    }
+    ion-list {
+        div.item-content {
+            h2 {
+                font-size: 0.6em;
+            }
+            p {
+                font-weight: bold;
+            }
+        }
+    }
+    div.bar-footer {
+        border-radius: 4px;
+        padding: 0px;
+        > button {
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            background-color: #FFF;
+            width: 100%;
+            border: none;
+            margin: 0px;
+            padding: 0px;
+            font-size: 1.2em;
+            color: #2370dc;
+        }
+    }
+}

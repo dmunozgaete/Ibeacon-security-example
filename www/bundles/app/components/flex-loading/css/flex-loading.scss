@@ -1,0 +1,35 @@
+@import "../../../css/_variables";
+@import "../../../css/_flexbox";
+
+flex-loading {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    .spinner {
+        stroke: $accent_color;
+        fill: $accent_color;
+        svg {
+            stroke: $accent_color;
+            .stop1 {
+                stop-color: $accent_color;
+            }
+            .stop2 {
+                stop-color: $accent_color;
+            }
+        }
+    }
+    > .message {
+        font-size: 1.2em;
+        opacity: 0.5;
+    }
+    > .legend {
+        opacity: 0.4;
+        margin-top: 0.5em;
+        font-size: 0.9em;
+        line-height: 1em;
+    }
+}

@@ -1,0 +1,11 @@
+/*------------------------------------------------------
+ Company:           Gale Framework.
+ Author:            <%= authors %>
+ 
+ Description:       <%= description %>
+ Github:            <%= homepage %>
+
+ Versión:           <%= version %>
+ Build Date:        <%= grunt.template.today("yyyy-mm-dd H:MM:ss") %>
+------------------------------------------------------*/
+

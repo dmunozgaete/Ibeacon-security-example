@@ -1,0 +1,5 @@
+{
+    "ERR.API.UNAVAILABLE": "El servidor no se encuentra disponible",
+
+    "ERR.INTERNET_CONNECTION": "Fallo al conectar con la API"
+}

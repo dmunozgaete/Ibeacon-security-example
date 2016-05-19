@@ -1,0 +1,27 @@
+@import "../../../bundles/app/css/_variables";
+@import "../../../bundles/app/css/_flexbox";
+[md-theme='dark'] {
+    /*------------------------- 
+    VIEW:   State Page
+    ROUTE:  /app/home
+    -------------------------*/
+    ion-view.state {
+        ion-list {
+            ion-item {
+                background: rgba(0, 0, 0, 0);
+                border-color: #4C4C4C;
+                h2 {
+                    color: #fff;
+                }
+                button {
+                    margin-top: 13px;
+                }
+                .badge {
+                    right: auto !important;
+                    top: 45px !important;
+                    left: 8px !important;
+                }
+            }
+        }
+    }
+}

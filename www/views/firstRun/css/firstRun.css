@@ -1,0 +1,77 @@
+/* 
+    SASS Theme Variables 
+*/
+/* 
+    SASS Mixins
+*/
+[md-theme='dark'] {
+  /*------------------------- 
+  VIEW:   First Run View's
+  ROUTE:  /app/firstRun/configure
+  -------------------------*/ }
+  [md-theme='dark'] .firstRun.configure {
+    color: #FFF;
+    /*
+      ION SLIDES CUSTOMIZATION
+    */ }
+    [md-theme='dark'] .firstRun.configure background-gps {
+      display: block;
+      min-height: 100%;
+      width: 100%;
+      background-image: url(images/background-gps.png);
+      background-color: #bd741a; }
+    [md-theme='dark'] .firstRun.configure push-notifications {
+      display: block;
+      min-height: 100%;
+      width: 100%;
+      background-image: url(images/push-notifications.png);
+      background-color: #6b8e35; }
+      [md-theme='dark'] .firstRun.configure push-notifications .actions {
+        text-align: left; }
+        [md-theme='dark'] .firstRun.configure push-notifications .actions > button {
+          padding: 6px !important;
+          margin-right: 8px; }
+        [md-theme='dark'] .firstRun.configure push-notifications .actions > a {
+          color: white;
+          font-size: 1.1em;
+          padding-left: 4px;
+          padding: 8px;
+          padding-right: 12px;
+          padding-left: 8px; }
+    [md-theme='dark'] .firstRun.configure sport-selector {
+      display: block;
+      min-height: 100%;
+      width: 100%;
+      background-image: url(images/sport-selector.png);
+      background-color: #3c3688; }
+    [md-theme='dark'] .firstRun.configure ion-slides .swiper-slide > * {
+      background-size: 100% auto;
+      background-position: center 35%;
+      background-repeat: no-repeat; }
+    [md-theme='dark'] .firstRun.configure ion-slides .swiper-slide content {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1em;
+      height: 18em; }
+      [md-theme='dark'] .firstRun.configure ion-slides .swiper-slide content > .title {
+        font-size: 1.8em;
+        padding-bottom: 1em; }
+      [md-theme='dark'] .firstRun.configure ion-slides .swiper-slide content > .description {
+        text-align: justify; }
+      [md-theme='dark'] .firstRun.configure ion-slides .swiper-slide content > .actions {
+        text-align: center;
+        padding-top: 2em; }
+        [md-theme='dark'] .firstRun.configure ion-slides .swiper-slide content > .actions > button {
+          padding: 6px 25px;
+          border-radius: 4px;
+          font-size: 1.2em;
+          border: 1px solid #e2e2e2;
+          background: none;
+          color: white; }
+    [md-theme='dark'] .firstRun.configure ion-slides .swiper-pagination-bullet {
+      background-color: #fff; }
+
+/*# sourceMappingURL=firstRun.css.map */

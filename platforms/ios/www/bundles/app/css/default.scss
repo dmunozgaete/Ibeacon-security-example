@@ -1,0 +1,102 @@
+@import "_variables";
+@import "_flexbox";
+
+/*-------------------------
+    IONIC OVERRIDES 
+-------------------------*/
+
+* {
+    font-family: robotoDraft;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+.grayscale {
+    @include grayscale;
+}
+
+
+/*------------------------------------------------------
+    Sodimac Dark Theme
+------------------------------------------------------*/
+
+[md-theme='dark'] {
+    color: $text_color;
+    /*-------------------------
+        HEADER BAR'S 
+     -------------------------*/
+    ion-header-bar {
+        background-color: #222;
+        background-image: none;
+        border-bottom: 1px solid #191919;
+        button,
+        button.activated {
+            color: $text_color !important;
+            background: $accent_color;
+            background-image: none;
+            border: none;
+        }
+        .title {
+            margin-left: 0px;
+            color: #FFF;
+            text-shadow: none;
+            box-shadow: none;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 1em;
+        }
+    }
+    ion-footer-bar {
+        &.action-button {
+            margin: 0px;
+            padding: 0px;
+            > button {
+                margin: 0px;
+                padding: 0px;
+                border-radius: 0px;
+                background: #000;
+                color: #fff;
+                text-transform: uppercase;
+                border-top: 1px solid #4C4C4C;
+            }
+        }
+    }
+    /* SPECIAL SUB HEADER (FIXED IN TOP) */
+    ion-header-bar.bar-subheader {
+        top: 44px;
+        padding: 0px;
+        height: auto;
+    }
+    ion-content.has-subheader {
+        top: 137px;
+    }
+    /*-------------------------
+        CONTENT
+     -------------------------*/
+    ion-view {
+        background-color: $primary_color;
+        ion-content {
+            background-color: $primary_color;
+        }
+    }
+    /*-------------------------
+        ION INFINITE SCROLL
+     -------------------------*/
+    ion-infinite-scroll {
+        .spinner {
+            stroke: $accent_color;
+            fill: $accent_color;
+            svg {
+                stroke: $accent_color;
+                .stop1 {
+                    stop-color: $accent_color;
+                }
+                .stop2 {
+                    stop-color: $accent_color;
+                }
+            }
+        }
+    }
+}

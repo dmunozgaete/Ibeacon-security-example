@@ -1,0 +1,25 @@
+<ion-modal-view ng-controller="BeaconFinderController" class="beacon-finder">
+    <!-- TITLE -->
+    <div class="title">
+        Beacons Cercanos
+    </div>
+    <!-- COLLECTION -->
+    <ion-content class="has-header has-footer">
+        <flex-loading ng-if="model.beacons.length ==0" spinner="ripple" title="Escaneando" legend="Buscando beacons...">
+
+        </flex-loading>
+        <ion-list ng-if="model.beacons.length > 0">
+            <ion-checkbox ng-change="toggle(item)" ng-model="item.selected" ng-repeat="item in model.beacons">
+                <h2>
+                    {{item.proximityUUID}}
+                </h2>
+                <p>
+                    {{item.distance | beaconDistance}}
+                </p>
+            </ion-checkbox>
+        </ion-list>
+    </ion-content>
+    <div class="bar bar-footer" ng-class="{'disabled': form.$invalid}" ng-click="select();">
+        <button ng-disabled="form.$invalid">Seleccionar</button>
+    </div>
+</ion-modal-view>
